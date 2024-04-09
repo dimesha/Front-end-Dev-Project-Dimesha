@@ -4,21 +4,18 @@ import Home from '../src/pages/Home';
 import Header from '../src/pages/Header';
 import Footer from '../src/pages/Footer';
 import Herosection from '../src/pages/HeroSection';
+import Product from'../src/pages/Product';
+import Faqs from '../src/pages/Faqs';
 import CTASection from './pages/CSection';
 
 
 export default function App() {
   return (
     <BrowserRouter>
-    {/* <Header/> */}
     <Herosection/>
-    {/* <CTASection/> */}
-
-      {/* <Routes>
-        <Route path="/" element={<Home />}/>
-        <Route path="/hero" element={<Herosection />}/>
-      </Routes> */}
-      <Footer/>
+    <Product/>
+    <Faqs/>
+    <Footer/>
     </BrowserRouter>
   )
 }
