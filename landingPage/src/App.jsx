@@ -12,6 +12,7 @@ import CTASection from './pages/CSection';
 export default function App() {
   return (
     <BrowserRouter>
+    <Header/>
     <Herosection/>
     <Product/>
     <Faqs/>
