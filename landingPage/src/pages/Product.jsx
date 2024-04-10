@@ -1,56 +1,79 @@
+import webImage from '../assets/web.png';
+import searchImage from '../assets/search.png';
+
 const features = [
     { name: 'Origin', description: 'Designed by Good Goods, Inc.' },
-    { name: 'Material', description: 'Solid walnut base with rare earth magnets and powder coated steel card cover' },
-    { name: 'Dimensions', description: '6.25" x 3.55" x 1.15"' },
-    { name: 'Finish', description: 'Hand sanded and finished with natural oil' },
-    { name: 'Includes', description: 'Wood card tray and 3 refill packs' },
-    { name: 'Considerations', description: 'Made from natural materials. Grain and color vary with each item.' },
+   
   ]
-  
+ 
   export default function Product() {
     return (
       <div className="bg-white">
-        <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
-          <div>
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Technical Specifications</h2>
+        <div className=" mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16  lg:max-w-7xl  lg:grid-rows-1 lg:px-24">
+        <div className="flex flex-col sm:flex-row gap-4  sm:gap-1 lg:gap-1">
+        <img
+            className="h-max w-auto"
+            src={webImage}
+            alt="company logo"
+          />
+             <div className="mx-auto gap-x-8 gap-y-10 px-4 sm:py-0 lg:py-24">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Web & Mobile App Development</h2>
             <p className="mt-4 text-gray-500">
-              The walnut wood card tray is precision milled to perfectly fit a stack of Focus cards. The powder coated
-              steel divider separates active cards from new ones, or can be used to archive important task lists.
+            Your web and mobile Apps are pieces of the puzzle to grow your business. We use frameworks which tailor content and engagement methods to respond to different intents shown by your potential customers who interact with your business online.
             </p>
-  
-            <dl className="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
-              {features.map((feature) => (
-                <div key={feature.name} className="border-t border-gray-200 pt-4">
-                  <dt className="font-medium text-gray-900">{feature.name}</dt>
-                  <dd className="mt-2 text-sm text-gray-500">{feature.description}</dd>
-                </div>
-              ))}
-            </dl>
+            <div className="mt-10 flex items-start justify-start gap-x-6">
+              <a
+                href="#"
+                className="rounded-md bg-amber-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-orange-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500"
+              >
+                LEARN MORE
+              </a>
+             
+            </div>
           </div>
-          <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
-            <img
-              src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-01.jpg"
-              alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
-              className="rounded-lg bg-gray-100"
-            />
-            <img
-              src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-02.jpg"
-              alt="Top down view of walnut card tray with embedded magnets and card groove."
-              className="rounded-lg bg-gray-100"
-            />
-            <img
-              src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-03.jpg"
-              alt="Side of walnut card tray with card groove and recessed card area."
-              className="rounded-lg bg-gray-100"
-            />
-            <img
-              src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-04.jpg"
-              alt="Walnut card tray filled with cards and card angled in dedicated groove."
-              className="rounded-lg bg-gray-100"
-            />
           </div>
+         
+          
         </div>
+
+
+
+        <div className=" mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16  lg:max-w-7xl  lg:grid-rows-1 lg:px-24">
+        <div className="flex flex-col sm:flex-row gap-4  sm:gap-1 lg:gap-1">
+        <img
+            className="h-max w-auto  md:hidden lg:hidden sm:block"
+            src={searchImage}
+            alt="company logo"
+          />
+             <div className="mx-auto gap-x-8 gap-y-10 px-4 sm:py-0 lg:py-24">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Digital Strategy Consulting</h2>
+            <p className="mt-4 text-gray-500">
+            Your digital strategy should complement the overall marketing strategy of the company. In online marketing, each component will never work in isolation and every business needs a different mix. We provide a clear concept and strategic overview to find the most efficient model for your business.
+            </p>
+            <div className="mt-10 flex items-start justify-start gap-x-6">
+              <a
+                href="#"
+                className="rounded-md bg-amber-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-orange-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500"
+              >
+                LEARN MORE
+              </a>
+             
+            </div>
+          </div>
+          <img
+            className="h-max w-auto hidden  md:block lg:block "
+            src={searchImage}
+            alt="company logo"
+          />
+          
+          </div>
+         
+          
+        </div>
+
       </div>
+
+      
     )
   }
   
